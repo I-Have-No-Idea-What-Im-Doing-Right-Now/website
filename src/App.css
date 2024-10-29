@@ -33,7 +33,7 @@ main {
 	background: none;
 	border: none;
 	animation-name: menu-button-release;
-	animation-duration: 1s;
+	animation-duration: 0.2s;
 	font-size: 20px;
 	color: #a10a0a;
 }
@@ -74,7 +74,7 @@ main {
 .menu-button:hover {
 	animation-name: menu-button-hover;
 	animation-direction: normal;
-	animation-duration: 1s;
+	animation-duration: 0.2s;
 	background: none;
 	border: none;
 	font-size: 30px;
