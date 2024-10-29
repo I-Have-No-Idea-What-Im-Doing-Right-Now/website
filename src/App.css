@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+main {
+	
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#icon {
+	width: 50px;
+	margin-right: 5%; /* For space between icon and title */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#title {
+	display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#top-bar {
+	font-family: monospace;
+	color: #a10a0a;
+	background-color: #350303;
+	border-radius: 10px;
+	text-indent: 10px;
+	column-width: 90px;
+	display: flex;
+	justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+#menu-buttons {
+	display: flex;
+	width: 60%;
+	margin-right: 3%;
+	justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-button {
+	background: none;
+	border: none;
+	animation-name: menu-button-release;
+	animation-duration: 1s;
+	font-size: 20px;
+	color: #a10a0a;
+}
+
+
+@keyframes menu-button-hover {
+	0% {
+		background: none;
+		border: none;
+		font-size: 20px;
+		color: #a10a0a;
+	}
+
+	100% {
+		background: none;
+		border: none;
+		font-size: 30px;
+		color: #a10a0a;
+	}
+}
+
+@keyframes menu-button-release {
+	100% {
+		background: none;
+		border: none;
+		font-size: 20px;
+		color: #a10a0a;
+	}
+
+	0% {
+		background: none;
+		border: none;
+		font-size: 30px;
+		color: #a10a0a;
+	}
+}
+
+.menu-button:hover {
+	animation-name: menu-button-hover;
+	animation-direction: normal;
+	animation-duration: 1s;
+	background: none;
+	border: none;
+	font-size: 30px;
+	color: #a10a0a;
 }
